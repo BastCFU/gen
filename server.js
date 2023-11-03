@@ -5,7 +5,8 @@ const cors = require('cors');
 
 const app = express();
 const port = 5000;
-const connectionString = `postgres://admin:admin@${process.env.DB_HOST}:5432/my-app`;
+const connectionString = `postgres://admin:admin@localhost:5432/my-app`;
+
 
 app.use(bodyParser.json());
 app.use(cors());
